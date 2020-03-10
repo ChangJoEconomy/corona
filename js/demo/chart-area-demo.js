@@ -32,9 +32,9 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["3/2", "3/3", "3/4", "3/5", "3/6", "3/7", "3/8"],
+    labels: ["3/4", "3/5", "3/6", "3/7", "3/8", "3/9", "3/10"],
     datasets: [{
-      label: "People", //±×·¡ÇÁ ¼¼ºÎ»çÇ× Ç¥½ÃÇÒ¶§ ¶ß´Â ¹®ÀÚ¿­
+      label: "People", //ê·¸ë˜í”„ ì„¸ë¶€ì‚¬í•­ í‘œì‹œí• ë•Œ ëœ¨ëŠ” ë¬¸ìì—´
       lineTension: 0.3,
       backgroundColor: "rgba(78, 115, 223, 0.05)",
       borderColor: "rgba(78, 115, 223, 1)",
@@ -46,7 +46,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [4212, 4812, 5328, 5766, 6284, 6767, 7134],
+      data: [5328, 5766, 6284, 6767, 7134, 7382, 7513],
     }],
   },
   options: {
@@ -78,7 +78,7 @@ var myLineChart = new Chart(ctx, {
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
-            return '' + number_format(value);  //¾Õ¿¡ Æ¯¼ö¹®ÀÚ¸¦ ³ÖÀ¸·Á¸é ''¿¡ »ğÀÔ
+            return '' + number_format(value);  //ì•ì— íŠ¹ìˆ˜ë¬¸ìë¥¼ ë„£ìœ¼ë ¤ë©´ ''ì— ì‚½ì…
           }
         },
         gridLines: {
@@ -110,7 +110,7 @@ var myLineChart = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': ' + number_format(tooltipItem.yLabel); //±×·¡ÇÁ ¼¼ºÎ»çÇ× Æ¯¼ö¹®ÀÚ Ãß°¡
+          return datasetLabel + ': ' + number_format(tooltipItem.yLabel); //ê·¸ë˜í”„ ì„¸ë¶€ì‚¬í•­ íŠ¹ìˆ˜ë¬¸ì ì¶”ê°€
         }
       }
     }
