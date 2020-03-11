@@ -225,7 +225,20 @@
 
                 <div class="col-lg-6 mb-4">
 
-                <!-- 마스크 -->
+                <!-- 지역별 감염자 현황 -->
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">지역별 감염자 현황</h6>
+                  </div>
+                  <div class="card-body">
+                      <div class="card-body">
+                        <div class="chart-bar">
+                          <canvas id="myBarChart"></canvas>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- 마스크(였던것)
                 <div class="card shadow mb-4">
                   <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">마스크</h6>
@@ -238,6 +251,7 @@
                     <a target="_blank" rel="nofollow" href="https://coronamask.kr/">공적판매 이외 마스크 구매사이트, 판매시간확인 모음&rarr;</a>
                   </div>
                 </div>
+                -->
 
                 <!-- 개발자 코멘트 -->
                 <div class="card shadow mb-4">
@@ -278,6 +292,7 @@
     <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
 </body>
 
 </html>
