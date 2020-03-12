@@ -32,13 +32,13 @@ var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["Daegu", "Gyeong-buk", "Gyeong-gi", "Seoul", "Chung-nam", "etc."],
+    labels: ["Daegu", "Gyeong-buk", "Seoul", "Gyeong-gi", "Chung-nam", "etc."],
     datasets: [{
       label: "People",
       backgroundColor: "#4e73df",
       hoverBackgroundColor: "#2e59d9",
       borderColor: "#4e73df",
-      data: [5663, 1117, 163, 141, 104, 325],
+      data: [5867, 1143, 212, 178, 117, 352],
     }],
   },
   options: {
