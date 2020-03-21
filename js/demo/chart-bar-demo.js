@@ -38,7 +38,7 @@ var myBarChart = new Chart(ctx, {
       backgroundColor: "#4e73df",
       hoverBackgroundColor: "#2e59d9",
       borderColor: "#4e73df",
-      data: [6031, 1157, 247, 221, 115, 401],
+      data: [6344, 1243, 321, 314, 119, 435],
     }],
   },
   options: {
