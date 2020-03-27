@@ -32,7 +32,7 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["3/8", "3/9", "3/10", "3/11", "3/12", "3/13", "3/14", "3/15", "3/16", "3/17", "3/18", "3/19", "3/20"],
+    labels: ["3/16", "3/17", "3/18", "3/19", "3/20", "3/21", "3/22", "3/23", "3/24", "3/25", "3/26"],
     datasets: [{
       label: "People", //그래프 세부사항 표시할때 뜨는 문자열
       lineTension: 0.3,
@@ -46,7 +46,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [7313, 7478, 7513, 7755, 7869, 7979, 8086, 8162, 8236, 8320, 8413, 8565, 8652],
+      data: [8236, 8320, 8413, 8565, 8652, 8799, 8897, 8961, 9037, 9137, 9241],
     }],
   },
   options: {
