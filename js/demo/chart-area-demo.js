@@ -32,9 +32,9 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["3/16", "3/17", "3/18", "3/19", "3/20", "3/21", "3/22", "3/23", "3/24", "3/25", "3/26"],
+    labels: [area_date[0], area_date[1], area_date[2], area_date[3], area_date[4], area_date[5], area_date[6], area_date[7], area_date[8], area_date[9], area_date[10]],
     datasets: [{
-      label: "People", //그래프 세부사항 표시할때 뜨는 문자열
+      label: "People", //�׷��� ���λ��� ǥ���Ҷ� �ߴ� ���ڿ�
       lineTension: 0.3,
       backgroundColor: "rgba(78, 115, 223, 0.05)",
       borderColor: "rgba(78, 115, 223, 1)",
@@ -46,7 +46,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [8236, 8320, 8413, 8565, 8652, 8799, 8897, 8961, 9037, 9137, 9241],
+      data: [area_num[0], area_num[1], area_num[2], area_num[3], area_num[4], area_num[5], area_num[6], area_num[7], area_num[8], area_num[9], area_num[10]],
     }],
   },
   options: {
@@ -78,7 +78,7 @@ var myLineChart = new Chart(ctx, {
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
-            return '' + number_format(value);  //앞에 특수문자를 넣으려면 ''에 삽입
+            return '' + number_format(value);  //�տ� Ư�����ڸ� �������� ''�� ����
           }
         },
         gridLines: {
@@ -110,7 +110,7 @@ var myLineChart = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': ' + number_format(tooltipItem.yLabel); //그래프 세부사항 특수문자 추가
+          return datasetLabel + ': ' + number_format(tooltipItem.yLabel); //�׷��� ���λ��� Ư������ �߰�
         }
       }
     }
