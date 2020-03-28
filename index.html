@@ -12,6 +12,7 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <script type="text/javascript" src="DATA.js"></script>
 </head>
 
 <body id="page-top">
@@ -24,10 +25,7 @@
           <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
             <!-- 제목 -->
             <h1 class="h3 mb-0 text-gray-800">
-              <script type="text/javascript">
-              var today = new Date();
-              document.write(today.getFullYear()+"-"+(today.getMonth()+1)+"-"+today.getDate()+" 코로나 현황");       
-            </script>
+              <script type="text/javascript" src="js/date.js"></script>
             </h1>
             <ul class="navbar-nav ml-auto">
           </nav>
@@ -44,7 +42,7 @@
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">확진자 (국내)</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">9,332명</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"><script type="text/javascript">document.write(국내확진자)</script>명</div>
                       </div>
                       <div class="col-auto">
                       </div>
@@ -59,7 +57,7 @@
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">치료중 (국내)</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">4,665명</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"><script type="text/javascript">document.write(국내치료중)</script>명</div>
                       </div>
                       <div class="col-auto">
                       </div>
@@ -76,7 +74,7 @@
                         <div class="text-xs font-weight-bold text-info text-uppercase mb-1">사망</div>
                         <div class="row no-gutters align-items-center">
                           <div class="col-auto">
-                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">139명</div>
+                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><script type="text/javascript">document.write(국내사망자)</script>명</div>
                           </div>
                           <div class="col">
                           </div>
@@ -95,7 +93,7 @@
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">격리해제</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">4,528명</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"><script type="text/javascript">document.write(국내격리해제)</script>명</div>
                       </div>
                       <div class="col-auto">
                       </div>
@@ -138,13 +136,13 @@
                     </div>
                     <div class="mt-4 text-center small">
                       <span class="mr-2">
-                        <i class="fas fa-circle text-primary"></i> 결과 음성(352,410)
+                        <i class="fas fa-circle text-primary"></i> 결과 음성(<script type="text/javascript">document.write(결과음성)</script>)
                       </span>
                       <span class="mr-2">
-                        <i class="fas fa-circle text-success"></i> 검사중(15,219)
+                        <i class="fas fa-circle text-success"></i> 검사중(<script type="text/javascript">document.write(검사중)</script>)
                       </span>
                       <span class="mr-2">
-                        <i class="fas fa-circle text-info"></i> 결과 양성(9,332)
+                        <i class="fas fa-circle text-info"></i> 결과 양성(<script type="text/javascript">document.write(국내확진자)</script>)
                       </span>
                     </div>
                   </div>
@@ -161,25 +159,25 @@
                     <h6 class="m-0 font-weight-bold text-primary">감염국가 현황</h6>
                   </div>
                   <div class="card-body">
-                    <h4 class="small font-weight-bold">미국 <span class="float-right">85,755명</span></h4>
+                    <h4 class="small font-weight-bold"><script type="text/javascript">document.write(일위국가)</script> <span class="float-right"><script type="text/javascript">document.write(일위확진자)</script>명</span></h4>
                     <div class="progress mb-4">
                       <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h4 class="small font-weight-bold">중국 <span class="float-right">81,340명</span></h4>
+                    <h4 class="small font-weight-bold"><script type="text/javascript">document.write(이위국가)</script> <span class="float-right"><script type="text/javascript">document.write(이위확진자)</script>명</span></h4>
                     <div class="progress mb-4">
-                      <div class="progress-bar bg-warning" role="progressbar" style="width: 94.85%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h4 class="small font-weight-bold">이탈리아 <span class="float-right">80,589명</span></h4>
+                    <h4 class="small font-weight-bold"><script type="text/javascript">document.write(삼위국가)</script> <span class="float-right"><script type="text/javascript">document.write(삼위확진자)</script>명</span></h4>
                     <div class="progress mb-4">
                       <div class="progress-bar" role="progressbar" style="width: 93.97%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h4 class="small font-weight-bold">스페인 <span class="float-right">64,059명</span></h4>
+                    <h4 class="small font-weight-bold"><script type="text/javascript">document.write(사위국가)</script> <span class="float-right"><script type="text/javascript">document.write(사위확진자)</script>명</span></h4>
                     <div class="progress mb-4">
                       <div class="progress-bar bg-info" role="progressbar" style="width: 74.7%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <h4 class="small font-weight-bold">독일 <span class="float-right">47,373명</span></h4>
+                    <h4 class="small font-weight-bold"><script type="text/javascript">document.write(오위국가)</script> <span class="float-right"><script type="text/javascript">document.write(오위확진자)</script>명</span></h4>
                     <div class="progress">
-                      <div class="progress-bar bg-success" role="progressbar" style="width: 55.24%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
@@ -190,7 +188,7 @@
                     <div class="card bg-danger text-white shadow">
                       <div class="card-body">
                         전세계 확진환자
-                        <div class="text-white-50 small">552,589</div>
+                        <div class="text-white-50 small"><script type="text/javascript">document.write(세계확진자)</script></div>
                       </div>
                     </div>
                   </div>
@@ -198,7 +196,7 @@
                     <div class="card bg-info text-white shadow">
                       <div class="card-body">
                         전세계 완치환자
-                        <div class="text-white-50 small">128,704</div>
+                        <div class="text-white-50 small"><script type="text/javascript">document.write(세계격리해제)</script></div>
                       </div>
                     </div>
                   </div>
@@ -206,7 +204,7 @@
                     <div class="card bg-primary text-white shadow">
                       <div class="card-body">
                         총 사망자
-                        <div class="text-white-50 small">25,042</div>
+                        <div class="text-white-50 small"><script type="text/javascript">document.write(세계사망자)</script></div>
                       </div>
                     </div>
                   </div>
@@ -214,7 +212,7 @@
                     <div class="card bg-warning text-white shadow">
                       <div class="card-body">
                         감염국가
-                        <div class="text-white-50 small">199</div>
+                        <div class="text-white-50 small"><script type="text/javascript">document.write(세계감염국)</script></div>
                       </div>
                     </div>
                   </div>
